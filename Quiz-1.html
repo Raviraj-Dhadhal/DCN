@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Introduction to Networks Quiz</title>
+
+<style>
+:root{
+    --bg:#f6f7f3;
+    --panel:#ffffff;
+    --panel-soft:#f3f5ef;
+    --text:#1d2430;
+    --muted:#5d6976;
+    --line:#dde3d8;
+    --accent:#0f766e;
+    --accent-deep:#134e4a;
+    --success-bg:#dff3e4;
+    --success-text:#17603a;
+    --danger-bg:#fce0e1;
+    --danger-text:#a33a3a;
+    --shadow:0 28px 70px rgba(15, 23, 42, 0.08);
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Georgia, "Times New Roman", serif;
+    color:var(--text);
+    background:
+        radial-gradient(circle at top left, rgba(15, 118, 110, 0.10), transparent 24%),
+        linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+    padding:22px;
+}
+
+.page-shell{
+    max-width:1280px;
+    margin:0 auto;
+}
+
+.site-header{
+    display:grid;
+    grid-template-columns:1fr 1.1fr 1fr;
+    gap:18px;
+    align-items:stretch;
+    margin-bottom:24px;
+}
+
+.header-block{
+    background:rgba(255,255,255,0.92);
+    border:1px solid rgba(221, 227, 216, 0.9);
+    border-radius:24px;
+    box-shadow:var(--shadow);
+    padding:22px;
+}
+
+.header-left,
+.header-right{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:12px;
+}
+
+.header-left a,
+.header-right a{
+    text-decoration:none;
+    color:var(--text);
+    background:var(--panel-soft);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:12px 14px;
+    transition:transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.header-left a:hover,
+.header-right a:hover{
+    transform:translateY(-2px);
+    border-color:var(--accent);
+    color:var(--accent-deep);
+}
+
+.header-center{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    min-height:200px;
+    background:linear-gradient(150deg, rgba(255,255,255,0.98), rgba(243,245,239,0.95));
+}
+
+.eyebrow{
+    margin:0 0 12px;
+    font-size:0.78rem;
+    letter-spacing:0.24em;
+    text-transform:uppercase;
+    color:var(--accent);
+}
+
+.header-center h1{
+    margin:0;
+    font-size:clamp(1.8rem, 4vw, 3rem);
+    line-height:1.05;
+}
+
+.header-center p:last-child{
+    margin:14px auto 0;
+    max-width:320px;
+    color:var(--muted);
+    line-height:1.6;
+}
+
+.container{
+    max-width:1180px;
+    margin:auto;
+    background:rgba(255,255,255,0.92);
+    padding:24px;
+    border-radius:24px;
+    border:1px solid rgba(221, 227, 216, 0.9);
+    box-shadow:var(--shadow);
+}
+
+.question{
+    margin-bottom:22px;
+    padding:18px;
+    border:1px solid var(--line);
+    border-radius:18px;
+    background:linear-gradient(180deg, #ffffff 0%, #fafbf8 100%);
+}
+
+.question h3{
+    margin-top:0;
+    line-height:1.5;
+}
+
+.options{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.options label{
+    padding:10px 14px;
+    border:1px solid #cfd8cc;
+    border-radius:14px;
+    cursor:pointer;
+    background:#fcfcfa;
+    transition:0.25s ease;
+}
+
+.options label:hover{
+    border-color:var(--accent);
+}
+
+.options input{
+    margin-right:5px;
+}
+
+.correct{
+    background:var(--success-bg) !important;
+    border:1px solid #72b58a !important;
+    color:var(--success-text);
+}
+
+.incorrect{
+    background:var(--danger-bg) !important;
+    border:1px solid #e59494 !important;
+    color:var(--danger-text);
+}
+
+.show-answer{
+    border:2px solid #4d9b6c !important;
+}
+
+@media (max-width: 980px){
+    .site-header{
+        grid-template-columns:1fr;
+    }
+
+    .header-center{
+        min-height:auto;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        font-size:14px;
+        padding:12px;
+    }
+
+    .container,
+    .header-block{
+        padding:18px;
+    }
+
+    .options label{
+        flex:1 1 100%;
+        font-size:14px;
+    }
+}
+
+@media (max-width: 480px){
+    body{
+        font-size:13px;
+        padding:10px;
+    }
+
+    .question{
+        font-size:14px;
+        padding:14px;
+    }
+
+    .options label{
+        font-size:13px;
+        padding:9px 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="page-shell">
+<header class="site-header">
+<div class="header-block header-left">
+<a href="https://github.com/raviraj-dhadhal" target="_blank" rel="noopener noreferrer">See My Work on GitHub</a>
+<!-- LinkedIn may require login for some visitors; that access control is handled by LinkedIn, not by link attributes such as noopener or noreferrer. -->
+<a href="https://www.linkedin.com/in/raviraj-dhadhal/" target="_blank">Let's Connect on LinkedIn</a>
+</div>
+<div class="header-block header-center">
+<p class="eyebrow">Cisco CCNA Module Quiz</p>
+<h1>Introduction to Networks</h1>
+<p>Build your fundamentals first, then move through the rest of the CCNA journey from the links on the right.</p>
+</div>
+<nav class="header-block header-right">
+<a href="index.html">Home: CCNA Quiz Hub</a>
+<a href="Quiz-2.html">Quiz 2: Switching, Routing, and Wireless Essentials</a>
+<a href="Quiz-3.html">Quiz 3: Enterprise Networking, Security, and Automation</a>
+<a href="Quiz-4.html">Quiz 4: CCNA 200-301 Certification Practice Exam</a>
+</nav>
+</header>
+
+<div class="container">
+<form id="quizForm"></form>
+</div>
+</div>
+
+<script>
+
+const quizData = [
+];
+
+function shuffle(array){
+return array.sort(()=>Math.random()-0.5);
+}
+
+function loadQuiz(){
+const form=document.getElementById("quizForm");
+shuffle(quizData);
+
+quizData.forEach((item,index)=>{
+const div=document.createElement("div");
+div.classList.add("question");
+
+const q=document.createElement("h3");
+q.innerText=item.q;
+div.appendChild(q);
+
+const optionsDiv=document.createElement("div");
+optionsDiv.classList.add("options");
+
+shuffle([...item.options]).forEach(option=>{
+const label=document.createElement("label");
+const input=document.createElement("input");
+
+input.type=Array.isArray(item.answer)?"checkbox":"radio";
+input.name="q"+index;
+input.value=option;
+
+input.addEventListener("change",()=>checkAnswer(item,index));
+
+label.appendChild(input);
+label.append(" "+option);
+optionsDiv.appendChild(label);
+});
+
+div.appendChild(optionsDiv);
+form.appendChild(div);
+});
+}
+
+function checkAnswer(item,index){
+const answers=document.getElementsByName("q"+index);
+
+answers.forEach(a=>{
+a.parentElement.classList.remove("correct","incorrect","show-answer");
+});
+
+answers.forEach(a=>{
+if(a.checked){
+if(Array.isArray(item.answer)){
+if(item.answer.includes(a.value)){
+a.parentElement.classList.add("correct");
+}else{
+a.parentElement.classList.add("incorrect");
+}
+}else{
+if(a.value===item.answer){
+a.parentElement.classList.add("correct");
+}else{
+a.parentElement.classList.add("incorrect");
+answers.forEach(b=>{
+if(b.value===item.answer){
+b.parentElement.classList.add("show-answer");
+}
+});
+}
+}
+}
+});
+}
+
+loadQuiz();
+
+</script>
+</body>
+</html>
