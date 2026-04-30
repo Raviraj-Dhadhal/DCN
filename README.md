@@ -6,6 +6,8 @@ While preparing for the CCNA exam, I noticed that there was not a simple questio
 
 This website is made so that everyone learning from Cisco can practice CCNA-style questions and answers from one place. My goal is to help students revise, test themselves, and feel more confident before the exam.
 
+The quiz questions are shuffled each time the page loads, so learners get a mixed practice experience every time they use the website.
+
 ## Included Quizzes
 
 - Quiz 1: Introduction to Networks
