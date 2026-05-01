@@ -250,6 +250,1463 @@ body{
 <script>
 
 const quizData = [
+
+{
+q:"1. An instructor is reviewing student answers on a previous term exam to prepare for a lecture on IPv6. What would be a good point for the instructor to make when explaining an IPv6 GUA (global unicast address)?",
+options:[
+"It is considered a best practice to use the IPV6 GUA address of the router as the default gateway address for Windows hosts.",
+"It can be configured statically or assigned dynamically on a router.",
+"It can only be configured statically on a host interface by using the ipv6 address command.",
+"It is routable on the IPv6 internet."
+],
+answer:"It is routable on the IPv6 internet."
+},
+{
+q:"2. An administrator needs to implement a 2.4GHz WLAN that requires multiple APs. Which two are characteristics of the 2.4GHz channels? (Choose two.)",
+options:[
+"They can provide faster data transmission for wireless clients in heavily populated wireless networks than 5GHz channels.",
+"Each channel is separated from the next channel by 20 MHz.",
+"There are 11 channels for North America identified by the 802.11b standard.",
+"If three adjacent APs are required, the non-overlapping channels 1, 21, and 41 are recommended.",
+"Each channel is allotted 22 MHz bandwidth."
+],
+answer:["There are 11 channels for North America identified by the 802.11b standard.","Each channel is allotted 22 MHz bandwidth."]
+},
+{
+q:"3. A technician must accommodate at least 500 subnets from address 172.16.0.0/16. What is an appropriate subnet mask and corresponding number of available host IP addresses per subnet to meet the requirement?",
+options:[
+"255.255.255.128 and 126 hosts",
+"255.255.255.0 and 128 hosts",
+"255.255.255.192 and 126 hosts",
+"255.255.255.224 and 128 hosts"
+],
+answer:"255.255.255.128 and 126 hosts"
+},
+{
+q:"4. Refer to the exhibit. A PC with the MAC address of 0800.069d.3841 attached to port Fa0/8 is sending data to a device that has the MAC address of 6400.6a5a.6821. What will the switch do first to handle the data transfer?",
+options:[
+"The switch will add the address 0800.069d.3841 to the MAC address table.",
+"The switch will send the frame to ports Fa0/4 and Fa0/6.",
+"The switch will flood the frame out all ports except port Fa0/8.",
+"The switch will send the frame to port Fa0/6.",
+"The switch will add the address 6400.6151.6821 to the MAC address table."
+],
+answer:"The switch will add the address 0800.069d.3841 to the MAC address table."
+},
+{
+q:"5. A network engineer is giving a tour of the company network operations center to a college class. The engineer is trying to describe how a WAN and connectivity to the internet relate to the network infrastructure. Which statement correctly describes network infrastructure and network communication?",
+options:[
+"Communication across the internet requires application of recognized technologies and standards.",
+"LANs are used to connect WANs around the world.",
+"A LAN connects small networks to large global networks.",
+"The internet is a worldwide collection of interconnected networks owned by an organization."
+],
+answer:"Communication across the internet requires application of recognized technologies and standards."
+},
+{
+q:"6. A network engineer is designing a borderless switched network in a hierarchical fashion. Which guideline might cause the engineer to implement a three-tier layer model?",
+options:[
+"Fault isolation is one of the primary purposes of the distribution layer.",
+"Access layer L2 switches connect to distribution layer L3 switches, which implement routing, quality of service, and security.",
+"The core layer provides differentiated services to various classes of service applications at the edge of the network.",
+"The access layer provides aggregation of Layer 2 broadcast domains."
+],
+answer:"Access layer L2 switches connect to distribution layer L3 switches, which implement routing, quality of service, and security."
+},
+{
+q:"7. Two students are discussing routers and one statement that is said between them is accurate. Which statement is that?",
+options:[
+"A directly-connected network is automatically added to the routing table of an adjacency neighbor if both routers are Cisco routers.",
+"A gateway of last resort is added to the routing table when the router boots up.",
+"Remote networks can only be added after they are learned by routers through dynamic routing protocols.",
+"A default route provides a way for packets that do not match a specific route in the routing table to be forwarded."
+],
+answer:"A default route provides a way for packets that do not match a specific route in the routing table to be forwarded."
+},
+{
+q:"8. What are two benefits of using virtualization? (Choose two.)",
+options:[
+"The operating system of the virtual machine does not require licensing when it is virtualized.",
+"The virtual machine is no longer dependent on a specific hardware platform.",
+"Because all virtual operating systems are contained within a single virtual network, networking connections are simplified.",
+"The performance of a virtual machine is faster than the performance of the operating system running on physical hardware.",
+"Multiple virtual machines can be running simultaneously on a single physical device."
+],
+answer:["The virtual machine is no longer dependent on a specific hardware platform.","Multiple virtual machines can be running simultaneously on a single physical device."]
+},
+{
+q:"9. Students in a data networking class are reviewing materials in preparation for a quiz. Which statement describes the operation of an access control method for shared network media?",
+options:[
+"The controlled-based access method, used on legacy bus-topology Ethernet LANs, decided the order of each device to transmit.",
+"In the CSMA/CD method, when two devices transmit at the same time, a collision is detected and data is resent immediately.",
+"The CSMA/CA method attempts to avoid collisions by having each device informing others how long the media will be unavailable.",
+"In a contention-based multiaccess network, each node has its own time to use the medium."
+],
+answer:"The CSMA/CA method attempts to avoid collisions by having each device informing others how long the media will be unavailable."
+},
+{
+q:"10. A network administrator is designing an IPv4 addressing scheme and requires these subnets.",
+options:[
+"9 subnets of 126 hosts with a 255.255.255.128 mask",
+"3 subnets of 126 hosts with a 255.255.255.192 mask",
+"6 subnets of 30 hosts with a 255.255.255.240 mask",
+"3 subnets of 126 hosts with a 255.255.255.128 mask",
+"6 subnets of 30 hosts with a 255.255.255.224 mask",
+"1 subnet of 126 hosts with a 255.255.255.192 mask",
+"2 subnets of 80 hosts with a 255.255.255.224 mask",
+"6 subnets of 30 hosts with a 255.255.255.240 mask"
+],
+answer:["3 subnets of 126 hosts with a 255.255.255.128 mask","6 subnets of 30 hosts with a 255.255.255.224 mask"]
+},
+{
+q:"11. A group of network technicians is discussing IPv6 multicast processes. What is a feature of one type of IPv6 multicast address that should be discussed?",
+options:[
+"A solicited-node multicast address is similar to the all-routers multicast address.",
+"It can be a source or a destination address.",
+"It has the prefix fe00::/8.",
+"The all-nodes multicast group has the same effect as an IPv4 broadcast address."
+],
+answer:"The all-nodes multicast group has the same effect as an IPv4 broadcast address."
+},
+{
+q:"12. Which LAN attack allows for identification of connected Cisco devices which are sending unencrypted broadcasts?",
+options:[
+"STP attack",
+"CDP reconnaissance",
+"ARP attack",
+"address spoofing attack"
+],
+answer:"CDP reconnaissance"
+},
+{
+q:"13. What is a characteristic of the REST API?",
+options:[
+"evolved into what became SOAP",
+"most widely used API for web services",
+"used for exchanging XML structured information over HTTP or SMTP",
+"considered slow, complex, and rigid"
+],
+answer:"most widely used API for web services"
+},
+{
+q:"14. A network administrator is using the Cisco DNA Center to monitor network health and to troubleshoot network issues. Which area should the administrator use to perform these tasks?",
+options:[
+"ASSURANCE",
+"PROVISION",
+"PLATFORM",
+"POLICY"
+],
+answer:"ASSURANCE"
+},
+{
+q:"15. Which term describes the process of managing configuration changes of network devices in an orderly fashion?",
+options:[
+"version control",
+"orchestration",
+"automation",
+"provisioning"
+],
+answer:"orchestration"
+},
+{
+q:"16. Which function of the Cisco intent-based networking system (IBNS) enables network operators to express the expected networking behavior that will best support the business intent?",
+options:[
+"ACL analysis",
+"assurance",
+"activation",
+"translation"
+],
+answer:"translation"
+},
+{
+q:"17. Which type of API would be used to allow authorized salespeople of an organization access to internal sales data from their mobile devices?",
+options:[
+"private",
+"partner",
+"public",
+"open"
+],
+answer:"private"
+},
+{
+q:"18. Refer to the exhibit. In the displayed JSON data representation, which symbol should be used to replace the question mark in lines 2 and 15?",
+options:[
+"square brackets [ ]",
+"commas ,",
+"double quotation marks ” “",
+"braces { }"
+],
+answer:"square brackets [ ]"
+},
+{
+q:"19. What action takes place when a frame entering a switch has a multicast destination MAC address?",
+options:[
+"The switch will forward the frame out all ports except the incoming port.",
+"The switch forwards the frame out of the specified port.",
+"The switch adds a MAC address table entry mapping for the destination MAC address and the ingress port.",
+"The switch replaces the old entry and uses the more current port."
+],
+answer:"The switch will forward the frame out all ports except the incoming port."
+},
+{
+q:"20. A network engineer is configuring secure remote access to a Cisco router. Which two commands would be issued in the line configuration mode of the router to implement SSH? (Choose two.)",
+options:[
+"login local",
+"crypto key generate rsa",
+"transport input ssh",
+"username admin secret ccna",
+"ip ssh version 2"
+],
+answer:["login local","transport input ssh"]
+},
+{
+q:"21. When an end device requests services from a DHCPv4 server it receives a host IPv4 address and a subnet mask. Which two other IPv4 addresses are also typically provided to a DCHPv4 client? (Choose two.)",
+options:[
+"DNS server address",
+"local HTTP web server address",
+"LAN default gateway address",
+"LAN NTP server address",
+"automatic private IPv4 address"
+],
+answer:["DNS server address","LAN default gateway address"]
+},
+{
+q:"22. A network engineer wants to synchronize the time of a router with an NTP server at the IPv4 address 209.165.200.225. The exit interface of the router is configured with an IPv4 address of 192.168.212.11. Which global configuration command should be used to configure the NTP server as the time source for this router?",
+options:[
+"ntp peer 209.165.200.225",
+"ntp server 192.168.212.11",
+"ntp server 209.165.200.225",
+"ntp peer 192.168.212.11"
+],
+answer:"ntp server 209.165.200.225"
+},
+{
+q:"23. When testing a new web server, a network administrator cannot access the home page when the server name is entered into a web browser on a PC. Pings to both the IPv4 and IPv6 addresses of the server are successful. What could be the problem?",
+options:[
+"DNS is not resolving the server name to an IPv4 or IPv6 address.",
+"ARP is not discovering the MAC address of the server.",
+"DHCP has not assigned an IPv4 or IPv6 address to the server.",
+"An FTP client must be installed on the PC."
+],
+answer:"DNS is not resolving the server name to an IPv4 or IPv6 address."
+},
+{
+q:"24. A network engineer is using SNMP manager software to monitor and manage network performance. In addition to polling network devices at regular time intervals, the engineer is configuring the devices to generate messages that inform the SNMP manager of specified events. What message type is configured on those devices that allows them to send unsolicited messages?",
+options:[
+"set request",
+"get-response",
+"trap",
+"get-bulk-request"
+],
+answer:"trap"
+},
+{
+q:"25. A wireless network engineer is implementing updated wireless equipment within the company. Which statement describes a wireless security protocol?",
+options:[
+"WPA secures the data using the Rivest Cipher 4 encryption method with a static key.",
+"WPA3-Personal uses 802.1X/EAP authentication that requires the use of a 192-bit cryptographic suite.",
+"WPA2-Personal is intended for home or small office networks and uses 802.1X/EAP authentication.",
+"WPA2-Enterprise is intended for enterprise networks and users must authenticate using 802.1X standard."
+],
+answer:"WPA2-Enterprise is intended for enterprise networks and users must authenticate using 802.1X standard."
+},
+{
+q:"26. Refer to the exhibit. Which access list configuration on router R1 will prevent traffic from the 192.168.2.0 LAN from reaching the Restricted LAN while permitting traffic from any other LAN?",
+options:[
+"R1(config-std-nacl)# permit any\nR1(config-std-nacl)# deny 192.168.2.0\nR1(config)# interface G0/2\nR1(config-if)# ip access-group BLOCK_LAN2 out",
+"R1(config-std-nacl)# deny 192.168.2.0\nR1(config-std-nacl)# permit any\nR1(config)# interface G0/2\nR1(config-if)# ip access-group BLOCK_LAN2 out",
+"R1(config-std-nacl)# permit any\nR1(config-std-nacl)# deny 192.168.3.0\nR1(config)# interface G0/2\nR1(config-if)# ip access-group BLOCK-LAN2 in",
+"R1(config-std-nacl)# deny 192.168.3.0\nR1(config-std-nacl)# permit any\nR1(config)# interface G0/2\nR1(config-if)# ip access-group BLOCK_LAN2 in"
+],
+answer:"R1(config-std-nacl)# deny 192.168.2.0\nR1(config-std-nacl)# permit any\nR1(config)# interface G0/2\nR1(config-if)# ip access-group BLOCK_LAN2 out"
+},
+{
+q:"27. An administrator who is troubleshooting connectivity issues on a switch notices that a switch port configured for port security is in the err-disabled state. After verifying the cause of the violation, how should the administrator re-enable the port without disrupting network operation?",
+options:[
+"Reboot the switch.",
+"Issue the no switchport port-security violation shutdown command on the interface.",
+"Issue the no switchport port-security command, then re-enable port security.",
+"Issue the shutdown command followed by the no shutdown command on the interface."
+],
+answer:"Issue the shutdown command followed by the no shutdown command on the interface."
+},
+{
+q:"28. An IT security specialist enables port security on a switch port of a Cisco switch. What is the default violation mode in use until the switch port is configured to use a different violation mode?",
+options:[
+"disabled",
+"shutdown",
+"protect",
+"restrict"
+],
+answer:"shutdown"
+},
+{
+q:"29. Refer to the exhibit. Which interface on switch S1 should be configured as a DHCP snooping trusted port to help mitigate DHCP spoofing attacks?",
+options:[
+"G0/23",
+"G0/1",
+"G0/22",
+"G0/24"
+],
+answer:"G0/23"
+},
+{
+q:"30. Which statement is an accurate description of a VPN type?",
+options:[
+"Site-to-site VPNs are typically created and secured using SSL.",
+"In a Clientless VPN the connection is secured using a web browser IPsec connection.",
+"In a Client-based VPN, users initiate a connection using VPN client software and the VPN gateway does the data encryption.",
+"In a site-to-site VPN internal hosts have no knowledge that a VPN is being used."
+],
+answer:"In a site-to-site VPN internal hosts have no knowledge that a VPN is being used."
+},
+{
+q:"31. A network administrator of a college is configuring WLAN security with WPA2 Enterprise authentication. Which server is required when deploying this type of authentication?",
+options:[
+"AAA",
+"DHCP",
+"RADIUS",
+"SNMP"
+],
+answer:"RADIUS"
+},
+{
+q:"32. When configuring a switch for SSH access, what other command that is associated with the login local command is required to be entered on the switch?",
+options:[
+"enable secret password",
+"login block-for seconds attempts number within seconds",
+"username,secret username,secret",
+"password password"
+],
+answer:"username,secret username,secret"
+},
+{
+q:"33. What term describes a process where a router simply discards any packet that arrives at the end of a queue that has completely used up its packet-holding resources?",
+options:[
+"traffic shaping",
+"weighted fair queuing (WFQ)",
+"tail drop",
+"weighted random early detection (WRED)",
+"low latency queuing (LLQ)"
+],
+answer:"tail drop"
+},
+{
+q:"34. In an OSPF network when are DR and BDR elections required?",
+options:[
+"when the two adjacent neighbors are interconnected over a point-to-point link",
+"when all the routers in an OSPF area cannot form adjacencies",
+"when the routers are interconnected over a common Ethernet network",
+"when the two adjacent neighbors are in two different networks"
+],
+answer:"when the routers are interconnected over a common Ethernet network"
+},
+{
+q:"35. A network engineer has been asked to prepare a router and to ensure that it can route IPv6 packets. Which command should the network engineer ensure has been entered on the router?",
+options:[
+"ipv6 enable",
+"ipv6 unicast-routing",
+"ipv6 address",
+"ipv6 route"
+],
+answer:"ipv6 unicast-routing"
+},
+{
+q:"36. Refer to the exhibit. Match the packets with their destination IP address to the exiting interfaces on the router. (Not all targets are used.)",
+options:[
+"packets with destination of 172.17.6.15\tFastEthernet0/0",
+"packets with destination of 172.17.14.8\tFastEthernet0/1",
+"packets with destination of 172.17.12.10\tFastEthernet1/0",
+"packets with destination of 172.17.10.5\tFastEthernet1/1",
+"packets with destination of 172.17.8.20\tSerial0/0/0"
+],
+answer:[
+"packets with destination of 172.17.6.15\tFastEthernet0/0",
+"packets with destination of 172.17.14.8\tFastEthernet0/1",
+"packets with destination of 172.17.12.10\tFastEthernet1/0",
+"packets with destination of 172.17.10.5\tFastEthernet1/1",
+"packets with destination of 172.17.8.20\tSerial0/0/0"
+]
+},
+{
+q:"37. Consider the following static route configured on a Cisco router:\n\nipv6 route 2001:db8:acad:4::/64 2001:db8:acad:3::2\nWhat remote network is specified in this route?",
+options:[
+"2001:db8:acad:4::/64",
+"2001:db8:acad:0::/64",
+"2001:db8:acad:3::/64",
+"2001:db8:acad:2::0/64"
+],
+answer:"2001:db8:acad:4::/64"
+},
+{
+q:"38. A network administrator configures a router with the ipv6 route ::/0 Serial2/0 command. What is the purpose of this command?",
+options:[
+"to add a dynamic route for the destination network ::/0 to the routing table",
+"to enable a router to forward packets for which there is no route in the routing table",
+"to forward packets destined for the network ::/0 to the serial 2/0 interface",
+"to forward all packets to the serial 2/0 interface"
+],
+answer:"to enable a router to forward packets for which there is no route in the routing table"
+},
+{
+q:"39. What is the purpose of a First Hop Redundancy Protocol?",
+options:[
+"to provide two or more routers working together, sharing an IP and MAC address of a virtual default gateway",
+"to provide a physical link to a new default router to replace the unreachable default gateway",
+"to provide a dynamic method by which devices on a LAN can determine the address of a new default gateway",
+"to provide a list of IP addresses of devices that can assume the role of the forwarding router"
+],
+answer:"to provide two or more routers working together, sharing an IP and MAC address of a virtual default gateway"
+},
+{
+q:"40. A network engineer examining the configuration of a Cisco router sees a network entry in a routing table listed with a code O. Which kind of route is this?",
+options:[
+"a route used for the default gateway",
+"a route for a network directly connected to the local router interface",
+"a route dynamically learned through the OSPF routing protocol",
+"a static route"
+],
+answer:"a route dynamically learned through the OSPF routing protocol"
+},
+{
+q:"41. What defines a host route on a Cisco router?",
+options:[
+"An IPv4 static host route configuration uses a destination IP address of a specific device and a /32 subnet mask.",
+"A static IPv6 host route must include the interface type and the interface number of the next hop router.",
+"A host route is designated with a C in the routing table.",
+"The link-local address is added automatically to the routing table as an IPv6 host route."
+],
+answer:"An IPv4 static host route configuration uses a destination IP address of a specific device and a /32 subnet mask."
+},
+{
+q:"42. Refer to the exhibit. Packets destined to which two networks will require the router to perform a recursive lookup? (Choose two.)",
+options:[
+"10.0.0.0/8",
+"128.107.0.0/16",
+"192.168.2.0/24",
+"192.168.1.0/24",
+"172.16.40.0/24",
+"64.100.0.0/16"
+],
+answer:["10.0.0.0/8","192.168.2.0/24"]
+},
+{
+q:"43. The routing table of a Cisco router has four static routes for network 10.0.0.0. Which route is the best match for a packet entering the router with a destination of 10.16.0.10?",
+options:[
+"S 10.0.0.0/16 is directly connected, GigabitEthernet 0/1",
+"S 10.16.0.0/24 [1/0] via 202.16.0.2",
+"S 10.16.0.0/16 is directly connected, GigabitEthernet 0/0",
+"S 10.0.0.0/8 [1/0] via 202.16.0.2"
+],
+answer:"S 10.16.0.0/24 [1/0] via 202.16.0.2"
+},
+{
+q:"44. Match the FHRP protocols to the appropriate description. (Not all options are used.)",
+options:[
+"GLBP\ta Cisco proprietary FHRP that provides load sharing in addition to redundancy",
+"HSRP\ta Cisco proprietary FHRP that provides redundancy through use of an active device and standby device",
+"VRRP\tan open standard FHRP that provides redundancy through use of a virtual routers master and one or more backups"
+],
+answer:[
+"GLBP\ta Cisco proprietary FHRP that provides load sharing in addition to redundancy",
+"HSRP\ta Cisco proprietary FHRP that provides redundancy through use of an active device and standby device",
+"VRRP\tan open standard FHRP that provides redundancy through use of a virtual routers master and one or more backups"
+]
+},
+{
+q:"45. Open the PT Activity. Perform the tasks in the activity instructions and then answer the question.\n\nIcon\nPT Activity - CCNA (200-301) Certification Practice Exam\n 1 file(s)  50.57 KB\n\n\nWhich task has to be performed on Router 1 for it to establish an OSPF adjacency with Router 2?",
+options:[
+"Issue the clear ip ospf process command.",
+"Change the subnet mask of interface FastEthernet 0/0 to 255.255.255.0.",
+"Remove the passive interface command from interface FastEthernet 0/0.",
+"Add the network 10.0.1.0 0.0.0.255 area 0 command to the OSPF process."
+],
+answer:"Change the subnet mask of interface FastEthernet 0/0 to 255.255.255.0."
+},
+{
+q:"46. What is the recommended Cisco best practice for configuring an OSPF-enabled router so that each router can be easily identified when troubleshooting routing issues?",
+options:[
+"Use the highest IP address assigned to an active interface participating in the routing process.",
+"Use a loopback interface configured with the highest IP address on the router.",
+"Use the highest active interface IP address that is configured on the router.",
+"a route dynamically learned through the OSPF routing protocol"
+],
+answer:"a route dynamically learned through the OSPF routing protocol"
+},
+{
+q:"47. In FHRP terminology, what represents a set of routers that present the illusion of a single router to hosts?",
+options:[
+"standby router",
+"forwarding router",
+"default gateway",
+"virtual router"
+],
+answer:"virtual router"
+},
+{
+q:"48. A network administrator is configuring the SNMP function on a Cisco 3500 series WLC. The task is to add an SNMP trap server to which this WLC will forward SNMP log messages. Which tab should the administrator use to add the SNMP trap server information?",
+options:[
+"COMMANDS",
+"MONITOR",
+"MANAGEMENT",
+"CONTROLLER"
+],
+answer:"MANAGEMENT"
+},
+{
+q:"49. Match the STP port state with the appropriate description. (Not all options are used.)",
+options:[
+"disabled\tThe port does not participate in spanning tree and does not forward frames.",
+"blocking\tThe port receives BPDU frames but does not forward frames.",
+"learning\tThe port prepares to participate in frame forwarding and begins to populate the MAC address table."
+],
+answer:[
+"disabled\tThe port does not participate in spanning tree and does not forward frames.",
+"blocking\tThe port receives BPDU frames but does not forward frames.",
+"learning\tThe port prepares to participate in frame forwarding and begins to populate the MAC address table."
+]
+},
+{
+q:"50. Refer to the exhibit. All the displayed switches are Cisco 2960 switches with the same default priority and operating at the same bandwidth. Which three ports will be STP designated ports? (Choose three.)",
+options:[
+"fa0/9",
+"fa0/21",
+"fa0/11",
+"fa0/10",
+"fa0/20",
+"fa0/13"
+],
+answer:["fa0/21","fa0/10","fa0/13"]
+},
+{
+q:"51. Refer to the exhibit. A network technician issues the command show vlan to verify the VLAN configuration. Based on the output, which port should be assigned with native VLAN?",
+options:[
+"Fa0/12",
+"Fa0/20",
+"Fa0/24",
+"Gig0/1"
+],
+answer:"Fa0/20"
+},
+{
+q:"52. What is the purpose of setting the native VLAN separate from data VLANs?",
+options:[
+"The native VLAN is for routers and switches to exchange their management information, so it should be different from data VLANs.",
+"A separate VLAN should be used to carry uncommon untagged frames to avoid bandwidth contention on data VLANs.",
+"The native VLAN is for carrying VLAN management traffic only.",
+"The security of management frames that are carried in the native VLAN can be enhanced."
+],
+answer:"A separate VLAN should be used to carry uncommon untagged frames to avoid bandwidth contention on data VLANs."
+},
+{
+q:"53. Which is a characteristic of EtherChannel?",
+options:[
+"EtherChannel uses physical ports that have been upgraded to provide a faster connection.",
+"EtherChannel configuration is applied to each physical port.",
+"STP treats all interfaces in an EtherChannel bundle as a single logical link.",
+"STP will not block redundant EtherChannel bundles between two switches."
+],
+answer:"STP treats all interfaces in an EtherChannel bundle as a single logical link."
+},
+{
+q:"54. What characteristic describes how data or voice VLANs are configured on a network?",
+options:[
+"Voice VLANs are configured on a trunk link between the IP phone and the switch.",
+"A switch port that has been configured in access mode can only belong to one data VLAN at a time.",
+"The switchport access vlan command must specify a VLAN currently configured in the vlan.dat file",
+"Data and voice VLANs have a different value range for VLAN IDs."
+],
+answer:"A switch port that has been configured in access mode can only belong to one data VLAN at a time."
+},
+{
+q:"55. What are two load-balancing methods in the EtherChannel technology? (Choose two.)",
+options:[
+"combination of source port and IP to destination port and IP",
+"source IP to destination IP",
+"source port to destination port",
+"combination of source MAC and IP to destination MAC and IP",
+"source MAC to destination MAC"
+],
+answer:["source IP to destination IP","source MAC to destination MAC"]
+},
+{
+q:"56. A network administrator is configuring a WLAN with WPA2 Enterprise on a Cisco 3500 series WLC. Client authentications will be handled by a RADIUS server. Which tab should the administrator use to add the RADIUS server information?",
+options:[
+"WIRELESS",
+"SECURITY",
+"WLANs",
+"MANAGEMENT"
+],
+answer:"SECURITY"
+},
+{
+q:"57. An administrator issues the show vlan brief command on a Cisco switch and the output shows that all ports are currently assigned to the default VLAN. What conclusion can be drawn?",
+options:[
+"Layer 2 control traffic is not associated with any VLAN.",
+"The switch cannot be remotely managed using Telnet or SSH until a management VLAN has been created.",
+"All user data traffic will be separated and secured from other users.",
+"There is a security risk because the management VLAN and the native VLAN are the same."
+],
+answer:"There is a security risk because the management VLAN and the native VLAN are the same."
+},
+{
+q:"58. If no bridge priority is configured in PVST, which criteria is considered when electing the root bridge?",
+options:[
+"highest IP address",
+"lowest IP address",
+"lowest MAC address",
+"highest MAC address"
+],
+answer:"lowest MAC address"
+},
+{
+q:"59. Refer to the exhibit. A network administrator issues the show lldp neighbors command to display information about neighboring devices. What can be determined based on the information?",
+options:[
+"Device B1 is a WLAN access point.",
+"Device C1 is a switch.",
+"Device A1 is connected to the port Fa0/5 on device B1.",
+"Device C1 is connected to device B1 through the port Fa0/3."
+],
+answer:"Device C1 is a switch."
+},
+{
+q:"60. What characteristic completes the following statement?\nWhen an IPv6 static route is configured, it is possible that the same IPv6 link-local address is used for ……",
+options:[
+"the “ipv6 unicast-routing” command.",
+"a destination host route with a /128 prefix.",
+"an administrative distance of 2.",
+"the next-hop address of two different adjacent routers."
+],
+answer:"the next-hop address of two different adjacent routers."
+},
+{
+q:"61. Which two protocols provide gateway redundancy at Layer 3? (Choose two.)",
+options:[
+"PUST",
+"RSTP",
+"VRRP",
+"HSRP",
+"STP"
+],
+answer:["VRRP","HSRP"]
+},
+{
+q:"62. Which security solution identifies incoming threats and blocks them from entering the corporate network?",
+options:[
+"access control lists",
+"intrusion prevention systems",
+"virtual private networks",
+"firewall filtering"
+],
+answer:"intrusion prevention systems"
+},
+{
+q:"63. Refer to the exhibit. What does the hyphen symbol (-) indicate in the YAML data structure?",
+options:[
+"a key/value pair that represents an IP address",
+"a string being used for both the key and value",
+"a single key/value pair",
+"an element in an array"
+],
+answer:"an element in an array"
+},
+{
+q:"64. In an Intent-Based Networking architecture, which two items are considered parts of an overlay fabric? (Choose two.)",
+options:[
+"switch",
+"IPsec protocol",
+"CAPWAP",
+"server",
+"router"
+],
+answer:["IPsec protocol","CAPWAP"]
+},
+{
+q:"65. What is an architectural constraint to which a true RESTful API web service must adhere?",
+options:[
+"It operates as a cloud service.",
+"It runs as client/server model.",
+"It must support the XML data format.",
+"It uses HTTPS to transport data."
+],
+answer:"It runs as client/server model."
+},
+{
+q:"66. A programmer is using Ansible as the configuration management tool. Which term is used to describe a set of instructions for execution?",
+options:[
+"Playbook",
+"Pillar",
+"Cookbook",
+"Manifest"
+],
+answer:"Playbook"
+},
+{
+q:"67. What action takes place when the source MAC address of a frame entering a switch is not in the MAC address table?",
+options:[
+"The switch updates the refresh timer for the entry.",
+"The switch adds the MAC address and incoming port number to the table.",
+"The switch adds a MAC address table entry for the destination MAC address and the egress port.",
+"The switch replaces the old entry and uses the more current port."
+],
+answer:"The switch adds the MAC address and incoming port number to the table."
+},
+{
+q:"68. In a controller-based wireless network, a Cisco WLC device has four ports connected to a switch to form a bundle. This bundle will provide load balancing and redundancy. Which two configurations must be performed on the four switch ports that connect to the WLC? (Choose two.)",
+options:[
+"native VLAN",
+"default VLAN",
+"LACP",
+"trunking mode",
+"EtherChannel"
+],
+answer:["trunking mode","EtherChannel"]
+},
+{
+q:"69. When configuring a wireless LAN, to which category does a home wireless router belong?",
+options:[
+"controller-based AP",
+"LWAPP-protocol based",
+"autonomous AP",
+"CAPWAP-protocol based"
+],
+answer:"autonomous AP"
+},
+{
+q:"70. Which feature or function does an AP provide in a wireless LAN?",
+options:[
+"A wireless client can connect to more than one AP at a time.",
+"Each AP advertises one or more SSIDs and a user can choose to connect to the closest SSID.",
+"An AP is easier to configure and to set up than Wi-Fi range extenders.",
+"A wireless device has to be associated to an AP in order to have access to network resources."
+],
+answer:"A wireless device has to be associated to an AP in order to have access to network resources."
+},
+{
+q:"71. A network engineer is designing a borderless switched network in a hierarchical fashion. Why might the engineer consider using a two-tier layer model?",
+options:[
+"The access layer in this model has different functions from the access layer in the three-tier layer model.",
+"It is recommended in smaller campus locations where there are fewer users accessing the network.",
+"It consists of a collapsed layer composed of the access and the distribution layer, and a second layer composed of the core layer.",
+"The primary function of the collapsed layer is to provide network access to the user."
+],
+answer:"It is recommended in smaller campus locations where there are fewer users accessing the network."
+},
+{
+q:"72. A technician is troubleshooting a network device and suspects there might be a duplex mismatch. What could cause a duplex mismatch?",
+options:[
+"data corruption",
+"interconnection of unlike devices",
+"interface misconfiguration",
+"auto-MDIX detection failure"
+],
+answer:"interface misconfiguration"
+},
+{
+q:"73. A pharmaceutical company wants to contract the services of a cloud provider to store employee data and company-specific applications with strict access security. Which type of cloud would be the most appropriate for this scenario?",
+options:[
+"public cloud",
+"private cloud",
+"hybrid cloud",
+"community cloud"
+],
+answer:"private cloud"
+},
+{
+q:"74. Which LAN attack involves the sending of a double-tagged 802.1Q frame to the switch?",
+options:[
+"VLAN double-tagging attack",
+"VLAN hopping attack *",
+"DHCP spoofing attack",
+"DHCP starvation attack"
+],
+answer:"VLAN double-tagging attack"
+},
+{
+q:"75. SNMP has been implemented on a network to monitor and manage devices. Which SNMP authentication process is preferred when SNMP managers communicate with SNMP agents?",
+options:[
+"plain-text community string",
+"MD5 or SHA authentication",
+"username authentication",
+"community string encryption"
+],
+answer:"MD5 or SHA authentication"
+},
+{
+q:"76. What characteristic completes the following statement?\nWhen an IPv6 static route is configured, the use of a link-local address as a next-hop address requires entering ……",
+options:[
+"the interface type and interface number.",
+"the “show ipv6 route static” command.",
+"the next-hop address of two different adjacent routers.",
+"the “ipv6 unicast-routing” command."
+],
+answer:"the interface type and interface number."
+},
+{
+q:"77. A network engineer is examining the routing table of a Cisco router. Consider the following routing table entry:\n\nS 10.2.2.0/30 [1/0] via 10.1.1.2, 00:00:13, Serial0/0/0\nWhat is the significance of the Serial0/0/0?",
+options:[
+"It is the interface on the next-hop router that is directly connected to the 10.2.2.0/30 network",
+"It is the interface on the next-hop router that is directly connected to the 10.1.1.0/24 network.",
+"It is the R4 interface through which the OSPF update was learned.",
+"It is the interface R4 uses to send data that is destined for 10.2.2.0/30."
+],
+answer:"It is the interface R4 uses to send data that is destined for 10.2.2.0/30."
+},
+{
+q:"78. When creating an IPv6 static route, when must a next-hop IPv6 address and an exit interface both be specified?",
+options:[
+"when the static route is a default route",
+"when the next hop is a link-local address",
+"when the exit interface is a point-to-point interface",
+"when CEF is enabled"
+],
+answer:"when the next hop is a link-local address"
+},
+{
+q:"79. What characterizes a floating static route?",
+options:[
+"It is a less trustworthy route than the primary route.",
+"It provides load balancing with another static route to the same destination.",
+"It is configured with a lower administrative distance than the primary router",
+"It serves as a backup to an OSPF-learned route as long as it is configured with an administrative distance of 105."
+],
+answer:"It is a less trustworthy route than the primary route."
+},
+{
+q:"80. Which feature on a Cisco router permits the forwarding of traffic for which there is no specific route?",
+options:[
+"next-hop",
+"gateway of last resort",
+"outgoing interface",
+"route source"
+],
+answer:"gateway of last resort"
+},
+{
+q:"81. Which ACE would permit traffic from hosts only on the 192.168.8.0/22 subnet?",
+options:[
+"permit 192.168.8.0 0.0.3.255",
+"permit 192.168.8.0 255.255.248.0",
+"permit 192.168.0.0 0.0.15.255",
+"permit 192.168.8.0 0.0.7.255"
+],
+answer:"permit 192.168.8.0 0.0.3.255"
+},
+{
+q:"82. Refer to the exhibit. A network administrator needs to add an ACE to the TRAFFIC-CONTROL ACL that will deny IP traffic from the subnet 172.23.16.0/20. Which ACE will meet this requirement?",
+options:[
+"30 deny 172.23.16.0 0.0.15.255",
+"15 deny 172.23.16.0 0.0.15.255",
+"5 deny 172.23.16.0 0.0.255.255",
+"5 deny 172.23.16.0 0.0.15.255"
+],
+answer:"5 deny 172.23.16.0 0.0.15.255"
+},
+{
+q:"83. What are two syntax rules for writing a JSON array? (Choose two.)",
+options:[
+"Values are enclosed in square brackets.",
+"A semicolon separates the key and list of values.",
+"A space must separate each value in the array",
+"Each value in the array is separated by a comma.",
+"The array can include only one value type."
+],
+answer:["Values are enclosed in square brackets.","Each value in the array is separated by a comma."]
+},
+{
+q:"84. What is the most likely cause when the output of the show interface command shows that a switch interface is up but the line protocol is down?",
+options:[
+"An encapsulation type mismatch exists.",
+"An incorrect default gateway has been configured.",
+"A cable is not attached to the interface.",
+"An incorrect cable type has been attached to the interface."
+],
+answer:"An encapsulation type mismatch exists."
+},
+{
+q:"85. Refer to the exhibit. A network administrator is reviewing the configuration of switch S1. Which protocol has been implemented to group multiple physical ports into one logical link?",
+options:[
+"LACP",
+"STP",
+"DTP",
+"PAGP"
+],
+answer:"PAGP"
+},
+{
+q:"86. A network administrator is considering whether PoE features are required in a specific network installation. Which option provides valid information about PoE?",
+options:[
+"The PoE pass-through feature is only supported by the Cisco Catalyst 3560-C Series compact switch model or higher.",
+"Any switch port can be configured with IOS commands to function as a PoE port.",
+"PoE allows the switch to deliver power to a device over the existing power grid.",
+"It can be used by IP phones, allowing them to be installed anywhere that there is an Ethernet cable."
+],
+answer:"It can be used by IP phones, allowing them to be installed anywhere that there is an Ethernet cable."
+},
+{
+q:"87. How are network data transmissions calculated?",
+options:[
+"goodput + traffic overhead = throughput",
+"goodput + latency = bandwidth",
+"throughput + goodput = bandwidth",
+"throughput + latency = goodput"
+],
+answer:"goodput + traffic overhead = throughput"
+},
+{
+q:"88. Refer to the exhibit. A corporate network is using NTP to synchronize the time across devices. What can be determined from the displayed output?",
+options:[
+"The interface on Router03 that connects to the time sever has the IPv4 address 209.165.200.225.",
+"Router03 is a stratum 2 device that can provide NTP service to other devices in the network.",
+"The time on Router03 may not be reliable because it is offset by more than 7 seconds to the time server.",
+"Router03 time is synchronized to a stratum 2 time server."
+],
+answer:"Router03 is a stratum 2 device that can provide NTP service to other devices in the network."
+},
+{
+q:"89. Refer to the exhibit. Which source address is being used by router R1 for packets being forwarded to the Internet?",
+options:[
+"10.6.15.2",
+"198.51.100.3",
+"209.165.200.225",
+"209.165.202.141"
+],
+answer:"209.165.200.225"
+},
+{
+q:"90. A user is reading a book from the website https://www.books-info.com/author50/book1.html#page150. Which term is used to describe the component www.books-info.com/author50/book1.html?",
+options:[
+"URL",
+"URI",
+"fragment",
+"URN",
+"protocol"
+],
+answer:"URN"
+},
+{
+q:"91. What are three components used in the query portion of a typical RESTful API request? (Choose three.)",
+options:[
+"resources",
+"key",
+"API server",
+"format",
+"parameters",
+"protocol"
+],
+answer:["key", "format", "parameters"]
+},
+{
+q:"92. Which two configuration management tools are developed using Python? (Choose two.)",
+options:[
+"Puppet",
+"Chef",
+"Ansible",
+"SaltStack",
+"NETCONF"
+],
+answer:["Ansible", "SaltStack"]
+},
+{
+q:"93. What characteristic completes the following statement? When an IPv6 static route is configured, and traffic is to be directed to one specific server, the static route requires …",
+options:[
+"the next-hop address of two different adjacent routers.",
+"a destination host route with a /128 prefix.",
+"an administrative distance of 2.",
+"the show ipv6 route static command."
+],
+answer:"a destination host route with a /128 prefix."
+},
+{
+q:"94. When two or more routes to the same destination are learned from different routing protocols, what does a router use to choose between the routes?",
+options:[
+"hop count",
+"administrative distance",
+"cost",
+"metric"
+],
+answer:"administrative distance"
+},
+{
+q:"95. Which LAN attack enables traffic from one VLAN to be seen by another VLAN without the aid of a router?",
+options:[
+"VLAN hopping attack",
+"ARP attack",
+"DHCP spoofing attack",
+"DHCP starvation attack"
+],
+answer:"VLAN hopping attack"
+},
+{
+q:"96. What are the three categories of tools that can be used in IP networks to implement QoS? (Choose three.)",
+options:[
+"classification and marking",
+"integrated services",
+"congestion management",
+"differentiated services",
+"congestion avoidance",
+"best effort"
+],
+answer:["classification and marking", "congestion management", "congestion avoidance"]
+},
+{
+q:"97. Which is a QoS model that a network engineer would implement to ensure a source to destination quality of service standard for a specified data flow?",
+options:[
+"differentiated services",
+"integrated services",
+"low latency queuing",
+"class-based weighted fair queuing",
+"best effort"
+],
+answer:"integrated services"
+},
+{
+q:"98. A network engineer is configuring a Cisco switch when this message is displayed.\n\n%LINK-3-UPDOWN: Interface Port-channel1, changed state to up\nWhat is the Syslog severity level of this message?",
+options:[
+"Alert",
+"Informational",
+"Notification",
+"Error"
+],
+answer:"Error"
+},
+{
+q:"99. In a controller-based wireless network, the WLC device may have multiple ports connected to a switch to form a bundle that provides load-balancing and redundancy. Which protocol supports the port bundle between a Cisco WLC and a Cisco switch?",
+options:[
+"PAgP",
+"LACP",
+"CAPWAP",
+"LAG"
+],
+answer:"LAG"
+},
+{
+q:"100. In a controller-based wireless network, a Cisco WLC device has four ports connected to a switch to form a bundle. This bundle will provide load-balancing and redundancy. Which two configurations must be performed on the four switch ports that connect to the WLC? (Choose two.)",
+options:[
+"native VLAN",
+"default VLAN",
+"LACP",
+"trunking mode",
+"EtherChannel"
+],
+answer:["trunking mode", "EtherChannel"]
+},
+{
+q:"101. What is a benefit of PortFast configured on a Cisco switch port?",
+options:[
+"It allows a device connected to this port to access the network without waiting for STP convergence on each VLAN.",
+"It minimizes the time that trunk ports must wait for spanning tree to converge.",
+"It allows the port to avoid a 30 second delay to access the network by immediately transitioning from disabled to forwarding state.",
+"It avoids the creation of a spanning tree loop with other directly connected switches."
+],
+answer:"It allows a device connected to this port to access the network without waiting for STP convergence on each VLAN."
+},
+{
+q:"102. A network administrator is configuring security for new WLANs on a Cisco 3500 series WLC. What is the default protocol used for authentication key management?",
+options:[
+"802.11",
+"AES",
+"802.1X",
+"WPA2"
+],
+answer:"802.1X"
+},
+{
+q:"103. Which two statements describe an Internet-based connectivity option? (Choose two.)",
+options:[
+"When using a satellite to connect to the internet, the reception of signals can be affected by storms.",
+"In cable technology, each local subscriber has a separate direct connection to the provider headend.",
+"ADSL2+ provides higher upload bandwidth than downstream bandwidth.",
+"VPNs provide security for teleworkers who use DSL to access the corporate network through the internet.",
+"LTE is a newer 5G mobile access technology."
+],
+answer:["When using a satellite to connect to the internet, the reception of signals can be affected by storms.", "VPNs provide security for teleworkers who use DSL to access the corporate network through the internet."]
+},
+{
+q:"104. What is a difference between autonomous APs and controller-based APs in wireless LANs?",
+options:[
+"Controller-based APs support PAgP and LACP protocols, whereas autonomous APs do not.",
+"Autonomous APs are easier to configure and manage than are controller-based APs.",
+"Autonomous APs require no initial configuration, whereas the lightweight APs require an initial configuration before communicating with a WLAN controller.",
+"When wireless demands increase, controller-based APs provide a better solution than do autonomous APs."
+],
+answer:"When wireless demands increase, controller-based APs provide a better solution than do autonomous APs."
+},
+{
+q:"105. Two recent networking graduates from a local college have just been hired by a communication company to work on various network cabling projects throughout the state. Why would the company consider using fiber-optic cabling in long-haul networks?",
+options:[
+"to provide high capacity solutions for teleworkers",
+"to provide always-on broadband services to customers in homes and small businesses",
+"to provide backbone cabling to applications and interconnecting infrastructure devices for customers",
+"to provide connectivity between countries or between cities"
+],
+answer:"to provide connectivity between countries or between cities"
+},
+{
+q:"106. An employee is logging into a company account and another employee stands in such a way to see the account ID and password. Which kind of threat is this?",
+options:[
+"identity theft",
+"adware",
+"data interception and theft",
+"spyware"
+],
+answer:"identity theft"
+},
+{
+q:"107. What is the purpose of the overload keyword in the ip nat inside source list 1 pool NAT_POOL overload command?",
+options:[
+"It allows many inside hosts to share one or a few inside global addresses.",
+"It allows a list of internal hosts to communicate with a specific group of external hosts.",
+"It allows external hosts to initiate sessions with internal hosts.",
+"It allows a pool of inside global addresses to be used by internal hosts."
+],
+answer:"It allows many inside hosts to share one or a few inside global addresses."
+},
+{
+q:"108. What two types of always-on internet connections are commonly used by teleworkers to communicate with a company? (Choose two.)",
+options:[
+"Metro Ethernet",
+"cellular",
+"leased line",
+"cable",
+"DSL"
+],
+answer:["cable", "DSL"]
+},
+{
+q:"109. A technician needs to add a new wireless device to a small WLAN. The WLAN is a mixture of old and newer 802.11b and 802.11g devices. What choice for the new device would provide the most interoperability for present and future growth?",
+options:[
+"Add a new 802.11g device.",
+"Add a new 802.11n device.",
+"Add a new 802.11b device.",
+"Add a new 802.11a device."
+],
+answer:"Add a new 802.11n device."
+},
+{
+q:"110. What action takes place when a frame entering a switch has a unicast destination MAC address appearing in the MAC address table?",
+options:[
+"The switch forwards the frame out of the specified port.",
+"The switch will forward the frame out all ports except the incoming port.",
+"The switch purges the entire MAC address table.",
+"The switch replaces the old entry and uses the more current port."
+],
+answer:"The switch forwards the frame out of the specified port."
+},
+{
+q:"111. A technician is reviewing a report of slowness during peak traffic periods and is looking at performance on a particular switch. What should the technician be aware of about memory buffering on a switch?",
+options:[
+"The port-based memory method is more appropriate to asymmetric switching.",
+"If shared memory is used, a single frame can delay the transmission of all others in memory because of a busy destination port.",
+"The amount of buffer memory required by a port is dynamically allocated when port-based memory is used.",
+"Shared memory allows traffic received on one port to be transmitted to another port without moving the data to a different queue."
+],
+answer:"Shared memory allows traffic received on one port to be transmitted to another port without moving the data to a different queue."
+},
+{
+q:"112. A company deploys FlexConnect APs in the remote office and uses CAPWAP to allow a WLC in their corporate headquarters office to manage WLANs in the remote office. One day the network administrator in the remote office notices that the FlexConnect APs are operating in the standalone mode. Which two functions can these APs perform in this mode? (Choose two.)",
+options:[
+"re-association of roaming clients",
+"association of roaming clients",
+"frame translation to other protocols",
+"switching client data traffic locally",
+"client authentication locally"
+],
+answer:["switching client data traffic locally", "client authentication locally"]
+},
+{
+q:"113. What term describes a default queuing method where packets are sent out of an interface in the order in which they arrive?",
+options:[
+"low latency queuing (LLQ)",
+"traffic shaping",
+"first-in, first-out (FIFO)",
+"weighted random early detection (WRED)",
+"weighted fair queuing (WFQ)"
+],
+answer:"first-in, first-out (FIFO)"
+},
+{
+q:"114. An employee who travels constantly for work needs to access the company network remotely. Which security mechanism offers a secure connection?",
+options:[
+"access control list",
+"intrusion prevention system",
+"dedicated firewall system",
+"virtual private network"
+],
+answer:"virtual private network"
+},
+{
+q:"115. Which protocol defines port-based authentication to restrict unauthorized hosts from connecting to the LAN through publicly accessible switch ports?",
+options:[
+"SSH",
+"802.1x",
+"RADIUS",
+"TACACS+"
+],
+answer:"802.1x"
+},
+{
+q:"116. What is a spyware threat?",
+options:[
+"Login credentials of a user are stolen and used to access private data.",
+"A malicious person attacks user devices or network resources.",
+"Software installed on a user device secretly collects information about the user.",
+"Private information is captured from the network of an organization."
+],
+answer:"Software installed on a user device secretly collects information about the user."
+},
+{
+q:"117. What characteristic completes the following statement? When an IPv6 static route is configured, a fully-specified configuration should be used with …",
+options:[
+"a directly connected multiaccess network.",
+"the next-hop address of two different adjacent routers.",
+"an administrative distance of 2.",
+"the “ipv6 unicast-routing” command."
+],
+answer:"a directly connected multiaccess network."
+},
+{
+q:"118. Which LAN attack spoofs the root bridge to change the topology of a network?",
+options:[
+"STP attack",
+"ARP attack",
+"DHCP spoofing attack",
+"address spoofing attack"
+],
+answer:"STP attack"
+},
+{
+q:"119. Refer to the exhibit. A network administrator is reviewing port and VLAN assignments on switch S2 and notices that interfaces Gi0/1 and Gi0/2 are not included in the output. Why would the interfaces be missing from the output?",
+options:[
+"They are configured as trunk interfaces.",
+"They are administratively shut down.",
+"There is no media connected to the interfaces.",
+"There is a native VLAN mismatch between the switches."
+],
+answer:"They are configured as trunk interfaces."
+},
+{
+q:"120. Data is being sent from a source PC to a destination server. Which three statements correctly describe the function of TCP or UDP in this situation? (Choose three.)",
+options:[
+"The source port field identifies the running application or service that will handle data returning to the PC.",
+"The TCP process running on the PC randomly selects the destination port when establishing a session with the server.",
+"UDP segments are encapsulated within IP packets for transport across the network.",
+"The UDP destination port number identifies the application or service on the server which will handle the data.",
+"TCP is the preferred protocol when a function requires lower network overhead.",
+"The TCP source port number identifies the sending host on the network."
+],
+answer:["The source port field identifies the running application or service that will handle data returning to the PC.", "UDP segments are encapsulated within IP packets for transport across the network.", "The UDP destination port number identifies the application or service on the server which will handle the data."]
+},
+{
+q:"121. Which two 802.11 WLAN standards operate in both the 2.4 GHz and in the 5 GHz frequency bands? (Choose two.)",
+options:[
+"802.11g",
+"802.11ax",
+"802.11n",
+"802.11b",
+"802.11ac",
+"802.11a"
+],
+answer:["802.11ax", "802.11n"]
+},
+{
+q:"122. Which two protocols are used to provide server-based AAA authentication? (Choose two.)",
+options:[
+"802.1x",
+"SSH",
+"SNMP",
+"TACACS+",
+"RADIUS"
+],
+answer:["TACACS+", "RADIUS"]
+},
+{
+q:"123. A network engineer is examining Cisco router configurations across an internetwork. Consider the following routing table entry",
+options:[
+"160",
+"110",
+"24",
+"50"
+],
+answer:"110"
+},
+{
+q:"124. What term describes allowing delay-sensitive packets such as voice to be sent before packets in other queues based on strict priority queuing (PQ)?",
+options:[
+"weighted fair queuing (WFQ)",
+"policing",
+"class-based weighted fair queuing (CBWFQ)",
+"traffic marking",
+"low latency queuing (LLQ)"
+],
+answer:"low latency queuing (LLQ)"
+},
+{
+q:"125. Which two 802.11 WLAN standards operate in both the 2.4 Ghz and in the 5Ghz frequency bands?(Choose two)",
+options:[
+"802.11b",
+"802.11a",
+"802.11ax",
+"802.11ac",
+"802.11n",
+"802.11g"
+],
+answer:["802.11ax", "802.11n"]
+},
+{
+q:"126. A network engineer is configuring a Cisco router as a DHCP relay. When issuing the ip helper-address command in the interface configuration mode which IPv4 address is added to the command?",
+options:[
+"DHCPv4 subnet address",
+"DHCPv4 server address",
+"DHCPv4 client default gateway address",
+"DHCPv4 client address"
+],
+answer:"DHCPv4 server address"
+},
+{
+q:"128. What action takes place when the source MAC address of a frame entering a switch appears in the MAC address table associated with a different port?",
+options:[
+"The switch resets the refresh timer on all MAC address table entries.",
+"The switch will forward the frame out all ports except the incoming port.",
+"The switch replaces the old entry and uses the more current port.",
+"The switch updates the refresh timer for the entry."
+],
+answer:"The switch replaces the old entry and uses the more current port."
+},
+{
+q:"129. Refer to the exhibit. Static NAT is being configured to allow PC 1 access to the web server on the internal network. What two addresses are needed in place of A and B to complete the static NAT configuration? (Choose two.)",
+options:[
+"A = 209.165.201.2",
+"A = 10.1.0.13",
+"B = 209.165.201.7",
+"B = 10.0.254.5",
+"B = 209.165.201.1"
+],
+answer:["A = 10.1.0.13", "B = 209.165.201.1"]
+},
+{
+q:"130. In computer network communications which data transfer process does the application layer protocol FTP use?",
+options:[
+"client-server",
+"server message block",
+"peer-to-peer",
+"Gnutella"
+],
+answer:"client-server"
+},
+{
+q:"131. What action takes place when a frame entering a switch has a broadcast destination MAC address?",
+options:[
+"The switch adds a MAC address table entry mapping for the destination MAC address and the ingress port.",
+"The switch replaces the old entry and uses the more current port.",
+"The switch will forward the frame out all ports except the incoming port.",
+"The switch forwards the frame out of the specified port."
+],
+answer:"The switch will forward the frame out all ports except the incoming port."
+},
+{
+q:"132. Which LAN attack involves sending unsolicited ARP replies, with the MAC Address of the threat actor and the IP address of the default gateway, to other hosts on a subnet?",
+options:[
+"ARP attack",
+"address spoofing attack",
+"DHCP starvation attack",
+"DHCP spoofing attack"
+],
+answer:"ARP attack"
+},
+{
+q:"133. A network engineer is examining the configuration of a router and notices that interface Gi0/0 has been configured with the ip address dhcp command. Which statement describes the IP address condition of this interface?",
+options:[
+"The router interface is configured as a DHCPv4 client.",
+"The router is configured as a DHCPv4 server.",
+"No IP address is required for this interface to operate.",
+"The interface will use an IPv6 address instead of an IPv4 address."
+],
+answer:"The router interface is configured as a DHCPv4 client."
+},
+{
+q:"134. What term describes holding packets in memory until resources become available to transmit them?",
+options:[
+"playout delay",
+"queuing",
+"queuing delay",
+"low latency queuing (LLQ)",
+"weighted fair queuing (WFQ)"
+],
+answer:"queuing"
+},
+{
+q:"135. What defines a two-tier spine-leaf topology?",
+options:[
+"Everything is two hops from everything else.",
+"The spine tier can be implemented with Cisco Nexus 9500 switches connected to each other and to the leaf switches.",
+"The APIC controller manipulates the data path directly.",
+"The Cisco APICs and all other devices in the network physically attach to leaf switches."
+],
+answer:"The Cisco APICs and all other devices in the network physically attach to leaf switches."
+},
+{
+q:"136. What characteristic completes the following statement? When an IPv6 static route is configured, as a default route, the destination network is …",
+options:[
+"the next-hop address of two different adjacent routers.",
+"a directly connected multiaccess network.",
+"::/0.",
+"the “ipv6 unicast-routing” command."
+],
+answer:"::/0."
+},
+{
+q:"137. Which LAN attack involves a rogue server connected to the network providing false IP configuration parameters to legitimate clients?",
+options:[
+"ARP attack",
+"DHCP starvation attack",
+"VLAN double-tagging attack",
+"DHCP spoofing attack",
+"STP attack"
+],
+answer:"DHCP spoofing attack"
+},
+{
+q:"138. Which LAN attack prevents hosts from obtaining dynamically assigned IP addresses?",
+options:[
+"DHCP spoofing attack",
+"DHCP starvation attack",
+"ARP attack",
+"VLAN double-tagging attack"
+],
+answer:"DHCP starvation attack"
+},
+{
+q:"139. What term describes adding a value to the packet header, as close to the source as possible, so that the packet matches a defined policy?",
+options:[
+"policing",
+"traffic marking",
+"weighted random early detection (WRED)",
+"traffic shaping",
+"tail drop"
+],
+answer:"traffic marking"
+},
+{
+q:"140. What action takes place when the source MAC address of a frame entering a switch is in the MAC address table?",
+options:[
+"The switch updates the refresh timer for the entry.",
+"The switch adds the MAC address and incoming port number to the table.",
+"The switch adds a MAC address table entry for the destination MAC address and the egress port.",
+"The switch replaces the old entry and uses the more current port."
+],
+answer:"The switch updates the refresh timer for the entry."
+},
+{
+q:"141. What action takes place when a frame entering a switch has a unicast destination MAC address that is not in the MAC address table?",
+options:[
+"The switch updates the refresh timer for the entry.",
+"The switch resets the refresh timer on all MAC address table entries.",
+"The switch replaces the old entry and uses the more current port.",
+"The switch will forward the frame out all ports except the incoming port."
+],
+answer:"The switch will forward the frame out all ports except the incoming port."
+}
 ];
 
 function shuffle(array){
